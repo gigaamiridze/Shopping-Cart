@@ -52,12 +52,12 @@ a {
   box-sizing: border-box;
 }
 
-.container {
+.container, header .container {
   max-width: 1068px;
   margin: 0 auto;
 }
 
-.container {
+.container, header .container {
   max-width: 1068px;
   margin: 0 auto;
 }
@@ -78,22 +78,36 @@ header {
   background: #fff;
   box-shadow: 0 1px 4px hsl(0deg, 4%, 15%);
 }
-
-.nav {
+header .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
 }
-
-.logo {
+header .container .logo {
   font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   color: #171427;
   text-transform: capitalize;
 }
-
-#cart-icon {
+header .container #cart-icon {
   font-size: 1.8rem;
   cursor: pointer;
+}
+
+section {
+  padding: 4rem 0 3rem;
+}
+
+.shop {
+  margin-top: 2rem;
+}
+
+.container .section-title {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #171427;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: center;
 }

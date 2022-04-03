@@ -17,19 +17,35 @@ header {
     width: 100%;
     background: $bg-color;
     box-shadow: 0 1px 4px hsl(0 4% 15% / 10);
+    .nav {
+        @include display (flex);
+        @include flex-property (space-between, center);
+        padding: 20px 0;
+    }
+    .container {
+        @extend %container;
+        .logo {
+            @include text-property (1.1rem, $poppins, $text-color, $capit);
+        }
+        #cart-icon {
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+    }
 }
-.nav {
-    @include display (flex);
-    @include flex-property (space-between, center);
-    padding: 20px 0;
+
+// Section
+section {
+    padding: 4rem 0 3rem;
+}
+.shop {
+    margin-top: 2rem;
 }
 .container {
     @extend %container;
-}
-.logo {
-    @include text-property (1.1rem, $poppins, $text-color, $capit);
-}
-#cart-icon {
-    font-size: 1.8rem;
-    cursor: pointer;
+    .section-title {
+        @include text-property (1.5rem, $poppins, $text-color, $capit);
+        font-weight: $semiBold;
+        text-align: center;
+    }
 }
