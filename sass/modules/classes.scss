@@ -1,0 +1,6 @@
+@import "./variables.scss";
+
+%container {
+    max-width: $cont-width;
+    margin: $auto-center;
+}

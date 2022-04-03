@@ -1,0 +1,35 @@
+@import "../modules/variables.scss";
+@import "../modules/classes.scss";
+@import "../modules/mixins.scss";
+
+img {
+    width: 100%;
+}
+body {
+    color: $text-color;
+}
+
+// Header
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $bg-color;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10);
+}
+.nav {
+    @include display (flex);
+    @include flex-property (space-between, center);
+    padding: 20px 0;
+}
+.container {
+    @extend %container;
+}
+.logo {
+    @include text-property (1.1rem, $poppins, $text-color, $capit);
+}
+#cart-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+}

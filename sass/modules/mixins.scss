@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+@mixin text-property ($fs, $fm, $color, $transform) {
+    font-size: $fs;
+    font-family: $fm;
+    color: $color;
+    text-transform: $transform;
+}
+
+@mixin display ($property) {
+    display: $property;
+}
+
+@mixin flex-property ($horizontal, $vertical) {
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
