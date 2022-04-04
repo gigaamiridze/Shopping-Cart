@@ -77,6 +77,7 @@ header {
   width: 100%;
   background: #fff;
   box-shadow: 0 1px 4px hsl(0deg, 4%, 15%);
+  z-index: 100;
 }
 header .nav {
   display: flex;
@@ -110,4 +111,47 @@ section {
   text-transform: capitalize;
   font-weight: 600;
   text-align: center;
+}
+.container .shop-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1.5rem;
+}
+.container .shop-content .product-box {
+  position: relative;
+}
+.container .shop-content .product-box:hover {
+  padding: 10px;
+  border: 1px solid #171427;
+  transition: 0.4s ease;
+}
+.container .shop-content .product-box .product-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+.container .shop-content .product-box .product-title {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  color: #171427;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.container .shop-content .product-box .price {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #171427;
+}
+.container .shop-content .product-box .add-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #171427;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+.container .shop-content .product-box .add-cart:hover {
+  background: hsl(249deg, 32%, 17%);
 }
