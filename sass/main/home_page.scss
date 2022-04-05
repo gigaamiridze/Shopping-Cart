@@ -32,6 +32,39 @@ header {
             font-size: 1.8rem;
             cursor: pointer;
         }
+        .cart {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 360px;
+            min-height: 100vh;
+            padding: 20px;
+            background: $bg-color;
+            box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+            .cart-title {
+                @include text-property (1.5rem, $poppins, $text-color, $capit);
+                font-weight: $semiBold;
+                text-align: center;
+                margin-top: 2rem;
+            }
+            .cart-content {
+                .cart-box {
+                    @include display (grid);
+                    grid-template-columns: 32% 50% 18%;
+                    align-items: center;
+                    gap: 1rem;
+                    margin-top: 1rem;
+                    .cart-img {
+
+                    }
+                    .detail-box {
+                        .cart-price {
+                            margin: 8px 0 8px 0;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -48,6 +81,7 @@ section {
         @include text-property (1.5rem, $poppins, $text-color, $capit);
         font-weight: $semiBold;
         text-align: center;
+        margin-bottom: 2rem;
     }
     .shop-content {
         @include display (grid);
