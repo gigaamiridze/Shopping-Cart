@@ -35,12 +35,16 @@ header {
         .cart {
             position: fixed;
             top: 0;
-            right: 0;
+            right: -100%;
             width: 360px;
             min-height: 100vh;
             padding: 20px;
             background: $bg-color;
             box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+            transition: 0.7s;
+            &.active {
+                right: 0;
+            }
             .cart-title {
                 @include text-property (1.5rem, $poppins, $text-color, $capit);
                 font-weight: $semiBold;

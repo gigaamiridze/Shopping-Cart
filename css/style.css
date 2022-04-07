@@ -98,12 +98,16 @@ header .container #cart-icon {
 header .container .cart {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   width: 360px;
   min-height: 100vh;
   padding: 20px;
   background: #fff;
   box-shadow: -2px 0 4px hsla(0deg, 4%, 15%, 0.1);
+  transition: 0.7s;
+}
+header .container .cart.active {
+  right: 0;
 }
 header .container .cart .cart-title {
   font-size: 1.5rem;
