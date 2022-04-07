@@ -121,8 +121,83 @@ header .container .cart .cart-content .cart-box {
   gap: 1rem;
   margin-top: 1rem;
 }
+header .container .cart .cart-content .cart-box .cart-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+}
+header .container .cart .cart-content .cart-box .detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+header .container .cart .cart-content .cart-box .detail-box .cart-product-title {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #171427;
+  text-transform: uppercase;
+}
 header .container .cart .cart-content .cart-box .detail-box .cart-price {
-  margin: 8px 0 8px 0;
+  font-size: none;
+  font-family: "Poppins", sans-serif;
+  color: #171427;
+  text-transform: none;
+  font-weight: 500;
+}
+header .container .cart .cart-content .cart-box .detail-box .cart-quantity {
+  border: 1px solid #171427;
+  border-radius: 2px;
+  outline-color: #fd4646;
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+header .container .cart .cart-content .cart-box .cart-remove {
+  font-size: 24px;
+  color: #fd4646;
+  cursor: pointer;
+}
+header .container .cart .total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid #171427;
+}
+header .container .cart .total .total-title {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #171427;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+header .container .cart .total .total-price {
+  font-family: "Poppins", sans-serif;
+  margin-left: 0.5rem;
+}
+header .container .cart .btn-buy {
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background: #fd4646;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+header .container .cart .btn-buy:hover {
+  background: #171427;
+}
+header .container .cart #close-cart {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: #171427;
+  cursor: pointer;
 }
 
 section {
