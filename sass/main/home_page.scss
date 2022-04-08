@@ -98,10 +98,11 @@ header {
                 .total-title {
                     @include text-property (1rem, $poppins, $text-color, $capit);
                     font-weight: $semiBold;
+                    margin-top: 10px;
                 }
                 .total-price {
                     font-family: $poppins;
-                    margin-left: 0.5rem;
+                    margin: 10px 0 0 0.5rem;
                 }
             }
             .btn-buy {

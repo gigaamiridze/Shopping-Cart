@@ -173,10 +173,11 @@ header .container .cart .total .total-title {
   color: #171427;
   text-transform: capitalize;
   font-weight: 600;
+  margin-top: 10px;
 }
 header .container .cart .total .total-price {
   font-family: "Poppins", sans-serif;
-  margin-left: 0.5rem;
+  margin: 10px 0 0 0.5rem;
 }
 header .container .cart .btn-buy {
   display: flex;
