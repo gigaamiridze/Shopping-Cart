@@ -3,7 +3,6 @@ let cartIcon = document.querySelector("#cart-icon");
 let cart = document.querySelector(".cart");
 let closeCart = document.querySelector("#close-cart");
 
-
 // Open cart
 cartIcon.onclick = () => {
     cart.classList.add("active");
@@ -96,10 +95,9 @@ function addProductToCart(title, price, productImg) {
             return;
         }
     }
-}
 
-var cartBoxContent = `
-                        <img src="${productImg}" class="cart-img" alt="Product">
+    var cartBoxContent = `
+                        <img src="${productImg}" class="cart-img" alt="">
                         <div class="detail-box">
                             <div class="cart-product-title">${title}</div>
                             <div class="cart-price">${price}</div>
@@ -108,14 +106,15 @@ var cartBoxContent = `
                         <!-- Remove cart -->
                         <i class='bx bxs-trash-alt cart-remove'></i>`;
 
-cartShopBox.innerHTML = cartBoxContent;
-cartItems.append(cartShopBox);
-cartShopBox
-    .getElementsByClassName("cart-remove")[0]
-    .addEventListener("click", removeCartItem);
-cartShopBox
-    .getElementsByClassName("cart-quantity")[0]
-    .addEventListener("change", quantityChanged);
+    cartShopBox.innerHTML = cartBoxContent;
+    cartItems.append(cartShopBox);
+    cartShopBox
+        .getElementsByClassName("cart-remove")[0]
+        .addEventListener("click", removeCartItem);
+    cartShopBox
+        .getElementsByClassName("cart-quantity")[0]
+        .addEventListener("change", quantityChanged);
+}
 
 // Update total
 function updateTotal() {
