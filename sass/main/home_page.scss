@@ -33,11 +33,14 @@ header {
         @include display (flex);
         @include flex-property (space-between, center);
         padding: 20px 0;
+        @include responsive (desktop-lg) { padding: 15px 0; };
+        @include responsive (phone-port-lg) { padding: 11px 0; };
     }
     .container {
         @extend %container;
         .logo {
             @include text-property (1.1rem, $poppins, $text-color, $capit);
+            @include responsive (phone-port-lg) { font-size: 1rem; };
         }
         #cart-icon {
             font-size: 1.8rem;
@@ -56,6 +59,8 @@ header {
             &.active {
                 right: 0;
             }
+            @include responsive (phone-port-lg) { width: 320px; };
+            @include responsive (phone-port-md) { width: 280px; };
             .cart-title {
                 @include text-property (1.5rem, $poppins, $text-color, $capit);
                 font-weight: $semiBold;
@@ -145,17 +150,24 @@ header {
 // Section
 section {
     padding: 4rem 0 3rem;
+    @include responsive (desktop-lg) { padding: 3rem 0 2rem; };
 }
 .shop {
-    margin-top: 2rem;
+    margin-top: 2rem !important;
+    @include responsive (phone-port-md) { margin-top: 1rem !important; };
 }
 .container {
     @extend %container;
+    @include responsive (desktop-lg) { margin: 0 auto; width: 90%; };
     .section-title {
         @include text-property (1.5rem, $poppins, $text-color, $capit);
         font-weight: $semiBold;
         text-align: center;
         margin-bottom: 2rem;
+        @include responsive (phone-port-md) {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
     }
     .shop-content {
         @include display (grid);

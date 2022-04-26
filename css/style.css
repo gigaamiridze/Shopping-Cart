@@ -98,11 +98,26 @@ header .nav {
   align-items: center;
   padding: 20px 0;
 }
+@media only screen and (max-width: 1080px) {
+  header .nav {
+    padding: 15px 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header .nav {
+    padding: 11px 0;
+  }
+}
 header .container .logo {
   font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   color: #171427;
   text-transform: capitalize;
+}
+@media only screen and (max-width: 400px) {
+  header .container .logo {
+    font-size: 1rem;
+  }
 }
 header .container #cart-icon {
   font-size: 1.8rem;
@@ -121,6 +136,16 @@ header .container .cart {
 }
 header .container .cart.active {
   right: 0;
+}
+@media only screen and (max-width: 400px) {
+  header .container .cart {
+    width: 320px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  header .container .cart {
+    width: 280px;
+  }
 }
 header .container .cart .cart-title {
   font-size: 1.5rem;
@@ -221,11 +246,27 @@ header .container .cart #close-cart {
 section {
   padding: 4rem 0 3rem;
 }
-
-.shop {
-  margin-top: 2rem;
+@media only screen and (max-width: 1080px) {
+  section {
+    padding: 3rem 0 2rem;
+  }
 }
 
+.shop {
+  margin-top: 2rem !important;
+}
+@media only screen and (max-width: 360px) {
+  .shop {
+    margin-top: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
 .container .section-title {
   font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
@@ -234,6 +275,12 @@ section {
   font-weight: 600;
   text-align: center;
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 360px) {
+  .container .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
 }
 .container .shop-content {
   display: grid;
