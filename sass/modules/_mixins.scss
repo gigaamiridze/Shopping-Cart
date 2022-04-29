@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "./variables";
 
 @mixin text-property ($fs, $fm, $color, $transform) {
     font-size: $fs;

@@ -1,7 +1,7 @@
-@import "../modules/variables.scss";
-@import "../modules/classes.scss";
-@import "../modules/mixins.scss";
-@import "../main/responsive.scss";
+@import "../modules/variables";
+@import "../modules/classes";
+@import "../modules/mixins";
+@import "./responsive";
 
 body::-webkit-scrollbar {
     width: 10px;
